@@ -2,7 +2,7 @@
 import torch   
 
 #handling text data
-from torchtext import data    
+from torchtext.legacy import data    
 import random
 import torch.optim as optim
 import torch.nn as nn
