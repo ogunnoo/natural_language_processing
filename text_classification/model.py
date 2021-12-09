@@ -21,10 +21,10 @@ class classifier(nn.Module):
                             dropout=dropout,
                             batch_first=True)
             
-                            #dense layer
-                            self.fc = nn.Linear(hidden_dim * 2, output_dim)
+        #dense layer
+        self.fc = nn.Linear(hidden_dim * 2, output_dim)
                             
-                            #activation function
+        #activation function
         self.act = nn.Sigmoid()
     
     def forward(self, text, text_lengths):
